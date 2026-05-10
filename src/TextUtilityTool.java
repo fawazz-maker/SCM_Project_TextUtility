@@ -9,7 +9,7 @@ public class TextUtilityTool {
         System.out.println("Welcome to Text Utility Tool");
 
         while (running) {
-            System.out.println("\nReverse Feature Menu - Select an option:");
+System.out.println("\nPlease choose an option:");
             System.out.println("1. Count characters");
             System.out.println("2. Reverse text");
             System.out.println("3. Exit");
