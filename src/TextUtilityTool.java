@@ -11,7 +11,7 @@ public class TextUtilityTool {
         while (running) {
             System.out.println("\nPlease choose an option:");
             System.out.println("1. Count characters");
-            System.out.println("2. Convert text to uppercase");
+            System.out.println("2. Reverse text");
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
 
@@ -27,8 +27,8 @@ public class TextUtilityTool {
 
                 case 2:
                     System.out.print("Enter text: ");
-                    String upperText = scanner.nextLine();
-                    System.out.println("Uppercase text: " + convertToUppercase(upperText));
+                    String reverseText = scanner.nextLine();
+                    System.out.println("Reversed text: " + reverseText(reverseText));
                     break;
 
                 case 3:
@@ -48,7 +48,7 @@ public class TextUtilityTool {
         return text.length();
     }
 
-    public static String convertToUppercase(String text) {
-        return text.toUpperCase();
+    public static String reverseText(String text) {
+        return new StringBuilder(text).reverse().toString();
     }
 }
